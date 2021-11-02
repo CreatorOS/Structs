@@ -11,9 +11,9 @@ contract Todos {
     Todo[] public todos;
 
     function create(string memory _text) public {
-        // 3 ways to initialize a struct
-        // - calling it like a function
-        todos.push(Todo(_text, false));
+
+        // write logic to create a new todo and add it to the array
+        
 
         // key value mapping
         todos.push(Todo({text: _text, completed: false}));
@@ -35,13 +35,13 @@ contract Todos {
 
     // update text
     function update(uint _index, string memory _text) public {
-        Todo storage todo = todos[_index];
-        todo.text = _text;
+        // write logic to update the text of the todo at _index
+
     }
 
     // update completed
     function toggleCompleted(uint _index) public {
-        Todo storage todo = todos[_index];
-        todo.completed = !todo.completed;
+        // write logic to toggle the completed status of the todo at _index
+        
     }
 }
