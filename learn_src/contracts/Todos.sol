@@ -15,15 +15,6 @@ contract Todos {
         // write logic to create a new todo and add it to the array
         
 
-        // key value mapping
-        todos.push(Todo({text: _text, completed: false}));
-
-        // initialize an empty struct and then update it
-        Todo memory todo;
-        todo.text = _text;
-        // todo.completed initialized to false
-
-        todos.push(todo);
     }
 
     // Solidity automatically created a getter for 'todos' so
