@@ -2,13 +2,29 @@
   "version": "1.0.0",
   "defaultFile": "contracts/Todos.sol",
   "environment": "solidity",
-  "setupCommands": ["npm i", "npx hardhat compile"],
+  "setupCommands": [
+    "npx hardhat compile"
+  ],
   "compileCommand": "npx hardhat compile",
   "tests": [
-    { "itShould": "Compile", "command": "sh learn_tests/43.sh" },
-    { "itShould": "Call create", "command": "sh learn_tests/44.sh" },
-    { "itShould": "Call update", "command": "sh learn_tests/45.sh" },
-    { "itShould": "Call toggleCompleted", "command": "sh learn_tests/46.sh" }
+    {
+      "itShould": "Compile",
+      "command": "sh learn_tests/43.sh"
+    },
+    {
+      "itShould": "Call create",
+      "command": "sh learn_tests/44.sh"
+    },
+    {
+      "itShould": "Call update",
+      "command": "sh learn_tests/45.sh"
+    },
+    {
+      "itShould": "Call toggleCompleted",
+      "command": "sh learn_tests/46.sh"
+    }
   ],
-  "learnerAccessibleFileList": ["contracts/*"]
+  "learnerAccessibleFileList": [
+    "contracts/*"
+  ]
 }
